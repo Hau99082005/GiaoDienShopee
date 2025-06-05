@@ -7,7 +7,7 @@
     <meta name="description" content="Mua sắm trực tuyến trên Shopee với đa dạng sản phẩm từ thời trang, điện tử đến gia dụng.">
     <meta name="keywords" content="Shopee, mua sắm, thương mại điện tử, Việt Nam">
     <title>Shopee Giao Diện</title>
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="bootstrap/css/main.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <!-- Swiper CSS --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
@@ -138,90 +138,79 @@
     <section class="container mt-4">
         <div class="bg-white rounded shadow p-4">
             <h2 class="mb-4 fw-semibold text-gray-800">Danh Mục Sản Phẩm</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <!-- Danh mục sản phẩm -->
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/thời trang nam.webp" alt="Thời Trang Nam" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Thời trang nam</p>
-                        </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-4">
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/thời trang nam.webp" alt="Thời Trang Nam" class="w-12 h-12 object-contain" />
                     </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/điện thoại.webp" alt="Điện Thoại" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Điện Thoại & Phụ Kiện</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/thiết bị điện tử.webp" alt="Thiết Bị Điện Tử" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Thiết bị điện tử</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/máy tính và laptop.webp" alt="Máy Tính & Laptop" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Máy tính & Laptop</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/máy ảnh và quay phim.webp" alt="Máy Ảnh & Quay Phim" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Máy ảnh và quay phim</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/đồng hồ.webp" alt="Đồng Hồ" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Đồng hồ</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/giaydepnam.webp" alt="Giày Dép Nam" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Giày dép nam</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/thietbigiadung.webp" alt="Thiết Bị Gia Dụng" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Thiết bị đồ gia dụng</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/thethaodulic.webp" alt="Thể Thao & Du Lịch" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Thể Thao & Du lịch</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/otovaxedep.webp" alt="Ô tô & Xe Máy" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Ô tô & xe máy & xe đạp</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide text-center">
-                        <div class="category-item">
-                            <img src="assets/images/thoitrangnu.webp" alt="Thời Trang Nữ" class="img-fluid rounded mb-2" />
-                            <p class="small text-gray-600">Thời trang nữ</p>
-                        </div>
-                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Thời trang nam</span>
                 </div>
-
-                <!-- Navigation buttons -->
-                <div class="swiper-button-next" style="color: #ee4d2d; right: 0;"></div>
-                <div class="swiper-button-prev" style="color: #ee4d2d; left: 0;"></div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/điện thoại.webp" alt="Điện Thoại" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Điện Thoại & Phụ Kiện</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/thiết bị điện tử.webp" alt="Thiết Bị Điện Tử" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Thiết bị điện tử</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/máy tính và laptop.webp" alt="Máy Tính & Laptop" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Máy tính & Laptop</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/máy ảnh và quay phim.webp" alt="Máy Ảnh & Quay Phim" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Máy ảnh và quay phim</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/đồng hồ.webp" alt="Đồng Hồ" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Đồng hồ</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/giaydepnam.webp" alt="Giày Dép Nam" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Giày dép nam</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/thietbigiadung.webp" alt="Thiết Bị Gia Dụng" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Thiết bị đồ gia dụng</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/thethaodulic.webp" alt="Thể Thao & Du Lịch" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Thể Thao & Du lịch</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/otovaxedep.webp" alt="Ô tô & Xe Máy" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Ô tô & xe máy & xe đạp</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/voucher&dichvu.webp" alt="Ô tô & Xe Máy" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Voucher và dịch vụ</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-2 overflow-hidden border group-hover:shadow-lg transition">
+                        <img src="assets/images/suckhoe.webp" alt="Ô tô & Xe Máy" class="w-12 h-12 object-contain" />
+                    </div>
+                    <span class="text-xs text-center text-gray-700 group-hover:text-[#ee4d2d]">Sức khoẻ</span>
+                </div>
             </div>
         </div>
     </section>
